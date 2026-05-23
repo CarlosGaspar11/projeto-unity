@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class AcenderLuz : MonoBehaviour
+public class NewMonoBehaviourScript1 : MonoBehaviour
 {
-    public GameObject Luz1;
-    public GameObject Luz2;
-    public GameObject Luz3;
+    public GameObject pontoInteresse;
+    public GameObject pontoInteresse2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,15 +19,13 @@ public class AcenderLuz : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Luz1.SetActive(true);
-        Luz2.SetActive(true);
-        Luz3.SetActive(true);
+        pontoInteresse.SetActive(true);
+        pontoInteresse2.SetActive(true);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Luz1.SetActive(false);
-        Luz2.SetActive(false);
-        Luz3.SetActive(false);
+        pontoInteresse.SetActive(false);
+        pontoInteresse2.SetActive(false);
     }
 }
